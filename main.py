@@ -52,3 +52,20 @@ print("Coeficiente de Pearson: ", pearson_coefficient)
 # Recta de regresión => y = mx + b
 m = co_variance / pow(variance_x, 2)
 print("Pediente: ", m)
+
+
+# b = y - mx
+b = mean_y - (m * mean_x)
+print("Término independiente: ", b)
+
+# x es la media de x
+x = mean_x
+
+y = m * x + b
+print("La recta es: ", y)
+
+# Coeficiente de correlación lineal 96% = 0.96 (Coeficiente de Pearson) {-1 a 1}
+# Si la relación es directa (si aumenta X, aumenta Y). R será positiva
+# Si la relación es directa (si aumenta X, disminuye Y). R será negativa
+# Mientras más próxima esté a 1 o a -1, la recta se ajusta mejor a la nube de puntos
+# * (Dependencia más fuerte)
