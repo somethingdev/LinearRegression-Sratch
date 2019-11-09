@@ -3,3 +3,9 @@ import matplotlib.pyplot as plt
 
 x = np.random.rand(1000)
 y = np.random.rand(1000)
+
+# Plt Scatter: Diagrama de dispersión
+plt.scatter(x, y, c='green', s=10, alpha=0.5)
+plt.axis('equal')
+plt.show()
+
