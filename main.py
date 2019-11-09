@@ -41,3 +41,7 @@ mean_y = summatory_y / n_elements
   
 variance_x = math.sqrt((lr.get_sum_of_array(lr.get_pow_x())) / n_elements - pow(mean_x, 2))
 variance_y = math.sqrt((lr.get_sum_of_array(lr.get_pow_y())) / n_elements - pow(mean_y, 2))
+
+co_variance = ((lr.get_sum_of_array(lr.get_multiply())) / n_elements) - (mean_x * mean_y)
+
+pearson_coefficient = co_variance / (variance_x * variance_y)
