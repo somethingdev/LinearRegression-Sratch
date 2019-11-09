@@ -45,3 +45,10 @@ variance_y = math.sqrt((lr.get_sum_of_array(lr.get_pow_y())) / n_elements - pow(
 co_variance = ((lr.get_sum_of_array(lr.get_multiply())) / n_elements) - (mean_x * mean_y)
 
 pearson_coefficient = co_variance / (variance_x * variance_y)
+
+print("Covarianza: ", co_variance)
+print("Coeficiente de Pearson: ", pearson_coefficient)
+
+# Recta de regresión => y = mx + b
+m = co_variance / pow(variance_x, 2)
+print("Pediente: ", m)
